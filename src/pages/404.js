@@ -1,6 +1,13 @@
+import { useRouter } from "next/router";
 import React from "react";
 
 function ErrorPage() {
+  const router = useRouter();
+
+  setTimeout(() => {
+    router.push("/");
+  }, 5000);
+
   return (
     <div>
       <img
